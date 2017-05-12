@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void main(void) {
+int main(void) {
         char msg[25] = "Hello world!\n\0";
         char *c = &msg[0];
 	puts(c);
@@ -10,4 +10,5 @@ void main(void) {
                 fputc(*c, openfile);
 		c++;
         }
+	return 0;
 }
